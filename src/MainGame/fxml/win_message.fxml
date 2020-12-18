@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainGame.controller.WinMessage">
+   <children>
+      <Label layoutX="12.0" layoutY="33.0" text="Вы правильно угадали слово!">
+         <font>
+            <Font name="Bookman Old Style" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="playMoreButton" layoutX="33.0" layoutY="83.0" mnemonicParsing="false" onAction="#playMore" text="Играть ещё раз">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="197.0" layoutY="83.0" mnemonicParsing="false" onAction="#doExit" text="Выйти">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

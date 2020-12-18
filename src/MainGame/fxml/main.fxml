@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainGame.controller.Controller">
+   <children>
+      <AnchorPane layoutX="200.0" layoutY="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="400.0" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+         <children>
+            <Label layoutX="59.0" layoutY="21.0" prefHeight="50.0" prefWidth="288.0" text="ИГРА &quot;УГАДАЙ СЛОВО&quot;">
+               <font>
+                  <Font name="Bookman Old Style" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="helpButton" layoutX="48.0" layoutY="155.0" mnemonicParsing="false" onAction="#showHelp" text="Помощь">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="textField" layoutX="38.0" layoutY="114.0" onAction="#checkAnswer" prefHeight="26.0" prefWidth="226.0">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </TextField>
+            <Button fx:id="answerButton" layoutX="299.0" layoutY="114.0" mnemonicParsing="false" onAction="#checkAnswer" text="Ответить">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="exitButton" layoutX="295.0" layoutY="155.0" mnemonicParsing="false" onAction="#doExit" text="Выход">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="text" layoutX="38.0" layoutY="77.0" prefHeight="22.0" prefWidth="315.0" text="Введи слово">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
